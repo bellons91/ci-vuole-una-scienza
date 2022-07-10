@@ -1,1 +1,49 @@
-theme: jekyll-theme-dinky
+# Base configuration
+exclude: [".rvmrc", ".rbenv-version", "README.md", "changelog.md"]
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Title
+name: Ci vuole una scienza
+
+ 
+
+# When using this template with a project (repository) page set the baseurl to '/project-name'
+# For user/organization pages set this to an empty string
+# When working locally use jekyll serve --baseurl '' so that you can view everything at localhost:4000
+# See http://jekyllrb.com/docs/github-pages/ for more info
+baseurl: '/ci-vuole-una-scienza'
+
+ 
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Home
+  internal: true
+  url: ./
+- text: Puntate
+  internal: true
+  url: puntate
+- text: Configure the Guide
+  internal: true
+  url: configure-the-guide
+- text: GitHub Setup
+  internal: true
+  url: github
+- text: Create a Glossary
+  glossary: true
+- text: Podcast
+  internal: false
+  url: https://www.ilpost.it/podcasts/ci-vuole-una-scienza/
+
+ 
+
+# Style Variables
+brand_color: "#DA253B"
